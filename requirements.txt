@@ -1,0 +1,11 @@
+# Only install what you actually need — every client is imported lazily,
+# so the module loads fine even if most of these aren't installed.
+# The mock client and rule-based fallback judge require no dependencies at all.
+
+anthropic>=0.40.0          # anthropic:*
+openai>=1.50.0             # openai:*, deepseek:*, groq:*, xai:* (all OpenAI-compatible)
+google-genai>=0.3.0        # google:*
+mistralai>=1.0.0           # mistral:*
+transformers>=4.44.0       # hf-local:*
+torch>=2.2.0               # hf-local:*
+accelerate>=0.33.0         # hf-local:* (multi-GPU / device_map="auto")
