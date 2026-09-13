@@ -15,5 +15,4 @@ scenarios.py
 judge.py
 *.save
 .env.example 
-
 .env.example

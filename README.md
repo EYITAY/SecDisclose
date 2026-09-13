@@ -1,3 +1,7 @@
+> **Note on this release:** This public repository contains the SecDisclose evaluation harness — the multi-provider runner, LLM-as-judge scoring pipeline, human-annotation validation workflow, and reporting — but currently **omits `scenarios.py` and `judge.py`**, which hold the specific 108-scenario taxonomy and judge-prompt design, pending grant review and publication. The code as-is will not run standalone (`pipeline.py` imports from both withheld files). Reach out if you'd like access to the complete, runnable harness for review or collaboration.
+
+---
+
 # SecDisclose Benchmark
 
 Full implementation of the SecDisclose design doc: does an AI agent
