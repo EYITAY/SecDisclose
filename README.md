@@ -1,5 +1,4 @@
-> **Note on this release:** This public repository contains the SecDisclose evaluation harness — the multi-provider runner, scoring pipeline, human-annotation validation workflow, and reporting — but withholds `scenarios.py` and `judge.py`, which hold the specific scenario taxonomy and judge-prompt design, pending grant review and publication. The code as-is will not run standalone (`pipeline.py` imports from both withheld files). Reach out if you'd like access to the complete, runnable harness for review or collaboration.
-
+> **Note on this release:**  This public repository contains the SecDisclose evaluation harness — including the multi-provider runner, scoring pipeline, human-annotation validation workflow, and reporting. The specific scenario taxonomy and judge-prompt design are currently withheld in scenarios.py and judge.py pending grant review and publication. The public harness therefore requires these components to run the complete benchmark. Researchers interested in reviewing the full runnable harness are welcome to get in touch.
 ---
 
 # SecDisclose Benchmark
@@ -28,12 +27,15 @@ python cli.py agreement --results results.json --annotations annotations_alice.j
 
 `annotate` collects blind human scores (the annotator doesn't see the judge's verdict) on a sample of trials, resumable across sessions. `agreement` reports percent agreement and Cohen's kappa between judge and human, plus every specific disagreement — the validation step we run before trusting any aggregate result.
 
-## Related work
+Related Work
 
-SecDisclose sits in the broader empirical honesty/deception-eval space:
+SecDisclose sits within the broader empirical literature on AI honesty, deception, and scheming.
 
-- **Apollo Research**, ["Frontier Models are Capable of In-Context Scheming"](https://www.apolloresearch.ai/research/scheming-reasoning-evaluations) (Dec 2024) — tests covert pursuit of misaligned goals in richer agentic environments with CoT monitoring. Conceptually adjacent but methodologically distinct from this project.
-- **Anthropic / Redwood Research**, ["Alignment Faking in Large Language Models"](https://www.anthropic.com/research/alignment-faking) (Dec 2024), and Anthropic's ["Sleeper Agents"](https://arxiv.org/abs/2401.05566) (Jan 2024).
-- Park et al., "AI Deception: A Survey of Examples, Risks, and Potential Solutions."
+Apollo Research — Frontier Models are Capable of In-Context Scheming (2024): evaluates covert pursuit of misaligned goals in richer agentic environments. SecDisclose is conceptually related but uses a controlled security-disclosure setting focused on incentive-sensitive reporting.
 
-We are not affiliated with Apollo Research or Anthropic.
+Anthropic / Redwood Research — Alignment Faking in Large Language Models (2024): investigates models behaving differently under conditions where their stated objectives may conflict with training incentives.
+
+Anthropic — Sleeper Agents (2024): studies deceptive behavior triggered by particular conditions or contexts.
+Park et al. — AI Deception: A Survey of Examples, Risks, and Potential Solutions: provides broader context for research on deceptive AI behavior.
+
+SecDisclose is an independent research project and is not affiliated with Apollo Research, Anthropic, or Redwood Research.
