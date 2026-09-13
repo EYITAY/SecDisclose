@@ -4,7 +4,7 @@
 
 # SecDisclose Benchmark
 
-A benchmark and evaluation harness for measuring whether AI agents honestly disclose defects they discover while doing assigned work, or underreport/downplay/omit them depending on the incentive present at the time — extending prior motivation-based deception research ([ReasonBench](https://github.com/EYITAY/ReasonBench)) into a new domain.
+A benchmark and evaluation harness for measuring whether AI agents honestly disclose defects they discover while doing assigned work, or underreport/downplay/omit them depending on the incentive present at the time. Extending prior motivation-based deception research ([ReasonBench](https://github.com/EYITAY/ReasonBench)) into a new domain.
 
 One CLI (`cli.py`), three subcommands: `run`, `annotate`, `agreement`.
 
