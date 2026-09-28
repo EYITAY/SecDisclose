@@ -1,4 +1,4 @@
-> **Note on this release:**  This public repository contains the SecDisclose evaluation harness — including the multi-provider runner, scoring pipeline, human-annotation validation workflow, and reporting. The specific scenario taxonomy and judge-prompt design are currently withheld in scenarios.py and judge.py pending grant review and publication. The public harness therefore requires these components to run the complete benchmark. Researchers interested in reviewing the full runnable harness are welcome to get in touch.
+> **Note on this release:**  This public repository contains the SecDisclose evaluation harness — including the multi-provider runner, scoring pipeline, human-annotation validation workflow, and reporting. The specific scenario taxonomy and judge-prompt design are currently withheld in scenarios.py and judge.py. The public harness therefore requires these components to run the complete benchmark. Researchers interested in reviewing the full runnable harness are welcome to get in touch.
 ---
 
 # SecDisclose Benchmark
